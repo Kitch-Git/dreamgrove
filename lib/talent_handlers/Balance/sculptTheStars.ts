@@ -9,7 +9,7 @@ export const sculptTheStars: GlobalAction = (event, queue, state, spells) => {
   if (!state.activeEffects.get(Talents.SculptTheStars)) {
     state.activeEffects.set(Talents.SculptTheStars, new Map([[event.spellId, event.time]]))
     spells.forEach((spell) => {
-      if (spell.spellId === 1239669) spell.cooldown -= 2 // Eclipse
+      if (spell.spellId === 1239669) spell.cooldown -= 3 // Eclipse
     })
   }
 
