@@ -19,7 +19,7 @@ A relatively low value 2p on it's own, given that !Mangle! isn't all that high o
 
 >!Thrash! calls up 3 thorns, each impaling a target for nature damage and dealing additional nature damage to up to 5 nearby enemies. Also extends the duration of !Berserk!/!Incarnation: Guardian of Ursoc! by 0.5 seconds, up to 5.0 seconds.
 
-This is where the bulk of the value in the tier set lies. Adding some additional damage to !Thrash! on all target counts is solid on it's own with current tuning but having the !Berserk!/!Incarnation: Guardian of Ursoc! extension means this tier set turns it into a longer and more powerful cooldown than it already was. As with the 2p, it gives some further syergy with the new Apex detailed below.
+This is where the bulk of the value in the tier set lies. Adding some additional damage to !Thrash! on all target counts is solid on it's own with current tuning but having the !Berserk!/!Incarnation: Guardian of Ursoc! extension means this tier set turns it into a longer and more powerful cooldown than it already was. As with the 2p, it gives some more syergy with the new Apex detailed below.
 
 ## Guardian Druid 12.1 Apex Overhaul
 
@@ -66,15 +66,13 @@ Pandemic is an in-game mechanic where most damage over time (DoT) or heal over t
 
 >[!Warning]
 > Currently neither Ripweaving nor Catweaving are a dps gain so they're not really worth doing unless you just enjoy the rotation more.
-> It is always assumed that if you're Ripweaving or Catweaving that you have !Fluid Form! talented and are using it as your method to change forms.
+> It is always assumed that if you're Ripweaving or Catweaving that you have !Fluid Form! talented and are using it as your primary method to change forms.
 
 Those of you looking into Druid of the Claw specifically may come across these terms. Catweaving is a fairly old term in WoW but with the introduction of some key talents in The War Within it has evolved into something different from what it used to be. The current meaning of these terms roughly boil down to:
 
 - **Ripweaving** - This is a simplified form of Catweaving. It involves using a very standard Guardian rotation the vast majority of the timne but when you reach six stacks of Feline Potential (from the DotC node !Wildpower Surge!) you will quickly enter !Cat Form! (ideally, using !Fluid Form!), use the empowered finisher and then quickly return to !Bear Form!.
-- **Catweaving** This is the more advanced and modernised version of Catweaving and no longer does it involve "just using cat stuff when offtanking". Modern Catweaving abuses !Fluid Form!, !Persistence! and !Empowered Shapeshifting! to frequently shift in and out of !Cat Form! whilst both tanking and offtanking, 
-allowing us to replace our weak filler spells (primarily Swipe) with stronger Cat abilities (!Rake!, !Shred!, !Rip! and !Ferocious Bite!).
-
-
+- **Catweaving** - This is the more advanced and modernised version of Catweaving and no longer does it involve "just using cat stuff when offtanking". Modern Catweaving abuses !Fluid Form!, !Persistence! and !Empowered Shapeshifting! to frequently shift in and out of !Cat Form! whilst both tanking and offtanking, allowing us to replace our bear filler spells (primarily Swipe) with Cat abilities (!Rake!, !Shred!, !Rip! and !Ferocious Bite!).
+- **Heart of the Wild** - This is currently the only semblance of Catweaving that remains as a part of Guardian's damage kit. !Heart of the Wild! in !Cat Form! does a significant amount of single target damage in a single global (2/3 if you include the form switching abilities used to enable it) every two minutes. Also worth noting that at higher target counts, !Heart of the Wild! in !Moonkin Form! will do more overall damage albeit, at the cost of the priority/single target.
 
 
 <HeroTalentsHeader title="Druid of the Claw" id="dotc">
@@ -82,13 +80,13 @@ allowing us to replace our weak filler spells (primarily Swipe) with stronger Ca
 <Checkbox isIcon id="Dotc_Heart of the Wild" spellId={319454} name="Heart of the Wild" defaultCheck />
 <Checkbox isIcon id="Dotc_Lunar Beam" spellId={204066} name="Lunar Beam" defaultCheck />
 <Checkbox isIcon id="Dotc_Red Moon" spellId={1252871} name="Red Moon" defaultCheck />
-<Checkbox isIcon id="Dotc_Incarnation: Guardian of Ursoc" spellId={102558} name="Incarnation: Guardian of Ursoc" radio="Dotc" defaultCheck />
-<Checkbox isIcon id="Dotc_Convoke the Spirits" spellId={391528} name="Convoke the Spirits" radio="Dotc" />
+<Checkbox isIcon id="Dotc_Incarnation: Guardian of Ursoc" spellId={102558} name="Incarnation: Guardian of Ursoc" radio="Dotc" />
+<Checkbox isIcon id="Dotc_Convoke the Spirits" spellId={391528} name="Convoke the Spirits" radio="Dotc" defaultCheck />
 <Checkbox isIcon id="Dotc_Harnessed Rage" spellId={1253035} name="Harnessed Rage" defaultCheck />
 <Checkbox isIcon id="Dotc_Killing Blow" spellId={1252994} name="Killing Blow" defaultCheck />
 <Checkbox isIcon id="Dotc_Bristling Fur" spellId={155835} name="Bristling Fur" defaultCheck />
 <Checkbox isIcon id="Dotc_Galactic Guardian" spellId={203964} name="Galactic Guardian" defaultCheck />
-<Checkbox isIcon id="Dotc_Raze" spellId={400254} name="Raze" defaultCheck />
+<Checkbox isIcon id="Dotc_Raze" spellId={400254} name="Raze" />
 <Checkbox isIcon id="Dotc_Sundering Roar" spellId={1253799} name="Sundering Roar" />
 <Checkbox isIcon id="Dotc_Wildpower Surge" spellId={441691} name="Wildpower Surge (Ripweaving)" />
 
@@ -120,115 +118,149 @@ allowing us to replace our weak filler spells (primarily Swipe) with stronger Ca
 - [*Dotc_Heart of the Wild&&Dotc_Incarnation: Guardian of Ursoc&&Dotc_Red Moon] Presss !Red Moon!
 - Proceed with normal rotation
 
+################################################
+
 </Collapsible>
 
 <Collapsible title="Single Target Rotation">
 
-- [*Dotc_Killing Blow] Press !441605|Ravage! if available and above 60 rage
-	- [*Dotc_Harnessed Rage] With !Harnessed Rage!, casting above 80 rage is ideal but it is **not** worth delaying the !441605|Ravage! cast past 60 rage
-- [*~Dotc_Killing Blow] Press !441605|Ravage! if available
-- [*Dotc_Red Moon] Press !Mangle! if available and !Red Moon! is on the target
-- Press !Thrash! if not at max stacks of the debuff or if it is about to expire
-- [*~Dotc_Red Moon] Press !Moonfire! if the dot completely falls off
-- [*~Dotc_Raze] Press !Maul! if you're above 100 rage to not overcap
-- [*Dotc_Raze] Press !Raze! if you're above 100 rage to not overcap
-- [*Dotc_Lunar Beam] Press !Lunar Beam!
+- Press !Ironfur! if the Apex spirit is not active and !Ravage! is not available
+- Press !Thrash! if the Apex spirit is active
+- [*Dotc_Harnessed Rage&&Dotc_Killing Blow] Press !Ravage! if:
+	- The Apex spirit is not up and rage is above 60
+	- The Apex spirit is up and rage is above 80
+- [~*Dotc_Harnessed Rage&&Dotc_Killing Blow] Press !Ravage! if rage is above 60
+- [~*Dotc_Killing Blow] Press !Ravage! if available
+- [*Dotc_Red Moon] Press !Mangle! if !Red Moon! is active on the target
+- [Dotc_Lunar Beam] Press !Lunar Beam! if available
 	- [*Dotc_Incarnation: Guardian of Ursoc] You can hold every second use of this to sync with !Incarnation: Guardian of Ursoc!
-	- [*~Dotc_Incarnation: Guardian of Ursoc] You will want sync every third use of this with !Berserk!
+	- [*Dotc_Convoke the Spirits] This should always line up with !Convoke the Spirits!
+		- [Dotc_Heart of the Wild] If !Heart of the Wild! is talented, you will !Lunar Beam! > !Heart of the Wild! sequence > !Convoke the Spirits! when all three line up to maximise the amp window.
+	- [*~Dotc_Incarnation: Guardian of Ursoc&&~Dotc_Convoke the Spirits] You will want sync every third use of this with !Berserk!
 - [*Dotc_Heart of the Wild] If !Heart of the Wild! is not on cooldown, perform the sequence below:
+	- [*Dotc_Killing Blow&&~Dotc_Raze] Dump rage as neccesary (up to 100 can be dropped in a single global through both !Ironfur! and !Maul! together)
+	- [*Dotc_Killing Blow&&Dotc_Raze] Dump rage as neccesary (up to 100 can be dropped in a single global through both !Ironfur! and !Raze! together)
+	- [*~Dotc_Killing Blow&&~Dotc_Raze] Dump rage as neccesary (up to 80 can be dropped in a single global through both !Ironfur! and !Maul! together)
+	- [*~Dotc_Killing Blow&&Dotc_Raze] Dump rage as neccesary (up to 80 can be dropped in a single global through both !Ironfur! and !Raze! together)
 	- Press !Rake! to shift into !Cat Form! 
 	- Press !Heart of the Wild! and then immediately !Mangle! to get back to !Bear Form!
 	- If you have no !Mangle! charges it is a dps gain to manually switch back to !Bear Form!
-- [*Dotc_Wildpower Surge] When you reach six stacks of !Feline Potential! then follow this sequence:
-	- Press !Maul! to dump your rage. If you have 40+ left over then you can also !Ironfur!
-	- Press !Rake! to shift into !Cat Form!
-	- Press !Rip! to consume the combo points granted by !Wildpower Surge! and put an empowered !Rip! on the target
-	- Press !Mangle! to return to !Bear Form! and resume your rotation
-- [*Dotc_Sundering Roar] Press !Sundering Roar!
-- [*Dotc_Convoke the Spirits] Press !Convoke the Spirits!
+- [*Dotc_Convoke the Spirits] Cast !Convoke the Spirits!
+	- For damage purposes, !Convoke the Spirits! should **always** be cast in !Bear Form!
 - [*Dotc_Bristling Fur] Cast !Bristling Fur! if the following are true:
 	- Both !Mangle! and !Thrash! are on cooldown
 	- !441605|Ravage! is not available
 	- You are taking damage and will be for the 8 second duration
-- [*Dotc_Incarnation: Guardian of Ursoc] Press !Incarnation: Guardian of Ursoc!
-	- Take a look at the Incarn/Berserk Rotation section to see any rotational changes and when to use !Wild Guardians!
-- [*~Dotc_Incarnation: Guardian of Ursoc] Press !Berserk!
-	- Take a look at the Incarn/Berserk Rotation section to see any rotational changes and when to use !Wild Guardians!
+- [*~Dotc_Convoke the Spirits&&Dotc_Incarnation: Guardian of Ursoc] Cast !Incarnation: Guardian of Ursoc!
+	- Refer to the Incarn/Berserk section below for rotational changes and when to use !Wild Guardians!
+- [*~Dotc_Incarnation: Guardian of Ursoc] Cast !Berserk!
+	- Refer to the Incarn/Berserk section below for rotational changes and when to use !Wild Guardians!
+- [*Dotc_Wildpower Surge] When you reach six stacks of !Feline Potential! then follow this sequence:
+	- Dump your rage as neccesary
+	- Press !Rake! to shift into !Cat Form!
+	- Press !Rip! to consume the combo points granted by !Wildpower Surge! and put an empowered !Rip! on the target
+	- Press !Mangle! to return to !Bear Form! and resume your rotation
 - [*Dotc_Red Moon] Cast !Red Moon!
-- Press !Mangle! if available
-- Press !Thrash! if available
+- [*Dotc_Sundering Roar] Press !Sundering Roar!
+- Press !Mangle!
+- Press !Thrash!
 - [*~Dotc_Red Moon&&Dotc_Galactic Guardian] Press !Moonfire! if you have a !Galactic Guardian! proc
-- Press !Swipe! if you have nothing else to press
+- Press !Swipe!
 
 </Collapsible>
 
 <Collapsible title="Cleave Rotation (2-3 Targets)">
 
-- [*Dotc_Killing Blow] Cast !441605|Ravage! at your priority target if available and above 60 rage 
-	- [*Dotc_Harnessed Rage] With !Harnessed Rage!, casting above 80 rage is ideal but it is **not** worth delaying the !441605|Ravage! cast past 60 rage
-- [*~Dotc_Killing Blow] Press !441605|Ravage! at your priority target if available
-- [*Dotc_Red Moon] Press !Mangle! if available and !Red Moon! is on the target
-- Press !Thrash! if not at max stacks of the debuff or if it is about to expire
-- [*~Dotc_Red Moon] Press !Moonfire! if the dot completely falls off
-- [*~Dotc_Raze] Cast !Maul! at your priority target if you're above 100 rage to not overcap
-- [*Dotc_Raze] Cast !Raze! at your priority target if you're above 100 rage to not overcap
-- [*Dotc_Lunar Beam] Press !Lunar Beam!
+- Press !Ironfur! if the Apex spirit is not active and !Ravage! is not available
+- Press !Thrash! if the Apex spirit is active
+- [*Dotc_Harnessed Rage&&Dotc_Killing Blow] Press !Ravage! if:
+	- The Apex spirit is not up and rage is above 60
+	- The Apex spirit is up and rage is above 80
+- [~*Dotc_Harnessed Rage&&Dotc_Killing Blow] Press !Ravage! if rage is above 60
+- [~*Dotc_Killing Blow] Press !Ravage! if available
+- [*Dotc_Red Moon] Press !Mangle! if !Red Moon! is active on the target
+- [Dotc_Lunar Beam] Press !Lunar Beam! if available
 	- [*Dotc_Incarnation: Guardian of Ursoc] You can hold every second use of this to sync with !Incarnation: Guardian of Ursoc!
-	- [*~Dotc_Incarnation: Guardian of Ursoc] You will want to sync every third use of this with !Berserk!
-- [*Dotc_Heart of the Wild] If !Heart of the Wild! is off cooldown, perform the sequence below:
+	- [*Dotc_Convoke the Spirits] This should always line up with !Convoke the Spirits!
+		- [Dotc_Heart of the Wild] If !Heart of the Wild! is talented, you will !Lunar Beam! > !Heart of the Wild! sequence > !Convoke the Spirits! when all three line up to maximise the amp window.
+	- [*~Dotc_Incarnation: Guardian of Ursoc&&~Dotc_Convoke the Spirits] You will want sync every third use of this with !Berserk!
+- [*Dotc_Heart of the Wild] If !Heart of the Wild! is not on cooldown, perform the sequence below:
+	- [*Dotc_Killing Blow&&~Dotc_Raze] Dump rage as neccesary (up to 100 can be dropped in a single global through both !Ironfur! and !Maul! together)
+	- [*Dotc_Killing Blow&&Dotc_Raze] Dump rage as neccesary (up to 100 can be dropped in a single global through both !Ironfur! and !Raze! together)
+	- [*~Dotc_Killing Blow&&~Dotc_Raze] Dump rage as neccesary (up to 80 can be dropped in a single global through both !Ironfur! and !Maul! together)
+	- [*~Dotc_Killing Blow&&Dotc_Raze] Dump rage as neccesary (up to 80 can be dropped in a single global through both !Ironfur! and !Raze! together)
 	- Press !Rake! to shift into !Cat Form! 
 	- Press !Heart of the Wild! on your priority target and then immediately !Mangle! to get back to !Bear Form!
 	- If you have no !Mangle! charges it is a dps gain to manually switch back to !Bear Form!
-- [*Dotc_Sundering Roar] Press !Sundering Roar!
-- [*Dotc_Convoke the Spirits] Press !Convoke the Spirits!
+- [*Dotc_Convoke the Spirits] Cast !Convoke the Spirits!
+	- For damage purposes, !Convoke the Spirits! should **always** be cast in !Bear Form!
 - [*Dotc_Bristling Fur] Cast !Bristling Fur! if the following are true:
 	- Both !Mangle! and !Thrash! are on cooldown
 	- !441605|Ravage! is not available
 	- You are taking damage and will be for the 8 second duration
-- [*Dotc_Incarnation: Guardian of Ursoc] Press !Incarnation: Guardian of Ursoc!
-	- Take a look at the Incarn/Berserk Rotation section to see any rotational changes and when to use !Wild Guardians!
-- [*~Dotc_Incarnation: Guardian of Ursoc] Press !Berserk!
-	- Take a look at the Incarn/Berserk Rotation section to see any rotational changes and when to use !Wild Guardians!
-- [*Dotc_Red Moon] Cast !Red Moon!
-- Press !Mangle! if available
-- Press !Thrash! if available
+- [*~Dotc_Convoke the Spirits&&Dotc_Incarnation: Guardian of Ursoc] Cast !Incarnation: Guardian of Ursoc!
+	- Refer to the Incarn/Berserk section below for rotational changes and when to use !Wild Guardians!
+- [*~Dotc_Incarnation: Guardian of Ursoc] Cast !Berserk!
+	- Refer to the Incarn/Berserk section below for rotational changes and when to use !Wild Guardians!
+- [*Dotc_Wildpower Surge] When you reach six stacks of !Feline Potential! then follow this sequence:
+	- Dump your rage as neccesary
+	- Press !Rake! to shift into !Cat Form!
+	- Press !Rip! to consume the combo points granted by !Wildpower Surge! and put an empowered !Rip! on your priority target
+	- Press !Mangle! to return to !Bear Form! and resume your rotation
+- [*Dotc_Red Moon] Cast !Red Moon! on your priority target
+- [*Dotc_Sundering Roar] Press !Sundering Roar!
+- Press !Mangle!
+- Press !Thrash!
 - [*~Dotc_Red Moon&&Dotc_Galactic Guardian] Press !Moonfire! if you have a !Galactic Guardian! proc
-- Press !Swipe! if you have nothing else to press
+- Press !Swipe!
 
 </Collapsible>
 
 <Collapsible title="AOE Rotation">
 
-- [*Dotc_Killing Blow] Cast !441605|Ravage! at your priority target if available and above 60 rage 
-	- [*Dotc_Harnessed Rage] With !Harnessed Rage!, casting above 80 rage is ideal but it is **not** worth delaying the !441605|Ravage! cast past 60 rage
-- [*~Dotc_Killing Blow] Press !441605|Ravage! at your priority target if available
-- [*Dotc_Red Moon] Press !Mangle! if available and !Red Moon! is on the target
-- Press !Thrash! if not at max stacks of the debuff or if it is about to expire
-- [*~Dotc_Red Moon] Press !Moonfire! if the dot completely falls off
-- [*~Dotc_Raze] Cast !Maul! at your priority target if you're above 100 rage to not overcap
-- [*Dotc_Raze] Cast !Raze! at your priority target if you're above 100 rage to not overcap
-- [*Dotc_Lunar Beam] Press !Lunar Beam!
+- Press !Ironfur! if the Apex spirit is not active and !Ravage! is not available
+- Press !Thrash! if the Apex spirit is active
+- [*Dotc_Harnessed Rage&&Dotc_Killing Blow] Press !Ravage! if:
+	- The Apex spirit is not up and rage is above 60
+	- The Apex spirit is up and rage is above 80
+- [~*Dotc_Harnessed Rage&&Dotc_Killing Blow] Press !Ravage! if rage is above 60
+- [~*Dotc_Killing Blow] Press !Ravage! if available
+- [*Dotc_Red Moon] Press !Mangle! if !Red Moon! is active on the target
+- [Dotc_Lunar Beam] Press !Lunar Beam! if available
 	- [*Dotc_Incarnation: Guardian of Ursoc] You can hold every second use of this to sync with !Incarnation: Guardian of Ursoc!
-	- [*~Dotc_Incarnation: Guardian of Ursoc] You will want to sync every third use of this with !Berserk!
-- [*Dotc_Heart of the Wild] If !Heart of the Wild! is off cooldown, perform one of the two sequences below:
-	- [*Dotc_Heart of the Wild] For significant priority damage at any target count, you would:
-		- Press !Rake! to shift into !Cat Form! 
-		- Press !Heart of the Wild! on your priority target and then immediately !Mangle! them to get back to !Bear Form!
-		- If you have no !Mangle! charges it is a dps gain to manually switch back to !Bear Form!
-	- [*Dotc_Heart of the Wild] If at 6+ target, for maximum aoe damage you would:
-		- Manually shift into !Moonkin Form!
-		- Press !Heart of the Wild! immediately !Mangle! your priority target to get back to !Bear Form!
-		- If you have no !Mangle! charges or if no target is in range to mangle, it is a dps gain to manually switch back to !Bear Form!
+	- [*Dotc_Convoke the Spirits] This should always line up with !Convoke the Spirits!
+		- [Dotc_Heart of the Wild] If !Heart of the Wild! is talented, you will !Lunar Beam! > !Heart of the Wild! sequence > !Convoke the Spirits! when all three line up to maximise the amp window.
+	- [*~Dotc_Incarnation: Guardian of Ursoc&&~Dotc_Convoke the Spirits] You will want sync every third use of this with !Berserk!
+- [*Dotc_Heart of the Wild] If !Heart of the Wild! is not on cooldown, perform the sequence below:
+	- [*Dotc_Killing Blow&&~Dotc_Raze] Dump rage as neccesary (up to 100 can be dropped in a single global through both !Ironfur! and !Maul! together)
+	- [*Dotc_Killing Blow&&Dotc_Raze] Dump rage as neccesary (up to 100 can be dropped in a single global through both !Ironfur! and !Raze! together)
+	- [*~Dotc_Killing Blow&&~Dotc_Raze] Dump rage as neccesary (up to 80 can be dropped in a single global through both !Ironfur! and !Maul! together)
+	- [*~Dotc_Killing Blow&&Dotc_Raze] Dump rage as neccesary (up to 80 can be dropped in a single global through both !Ironfur! and !Raze! together)
+	- Press !Rake! to shift into !Cat Form! 
+	- Press !Heart of the Wild! on your priority target and then immediately !Mangle! to get back to !Bear Form!
+	- If you have no !Mangle! charges it is a dps gain to manually switch back to !Bear Form!
+- [*Dotc_Convoke the Spirits] Cast !Convoke the Spirits!
+	- For damage purposes, !Convoke the Spirits! should **always** be cast in !Bear Form!
+- [*Dotc_Bristling Fur] Cast !Bristling Fur! if the following are true:
+	- Both !Mangle! and !Thrash! are on cooldown
+	- !441605|Ravage! is not available
+	- You are taking damage and will be for the 8 second duration
+- [*~Dotc_Convoke the Spirits&&Dotc_Incarnation: Guardian of Ursoc] Cast !Incarnation: Guardian of Ursoc!
+	- Refer to the Incarn/Berserk section below for rotational changes and when to use !Wild Guardians!
+- [*~Dotc_Incarnation: Guardian of Ursoc] Cast !Berserk!
+	- Refer to the Incarn/Berserk section below for rotational changes and when to use !Wild Guardians!
+- [*Dotc_Wildpower Surge] When you reach six stacks of !Feline Potential! then follow this sequence:
+	- Dump your rage as neccesary
+	- Press !Rake! to shift into !Cat Form!
+	- Press !Rip! to consume the combo points granted by !Wildpower Surge! and put an empowered !Rip! on your priority target
+	- Press !Mangle! to return to !Bear Form! and resume your rotation
+- [*Dotc_Red Moon] Cast !Red Moon! on your priority target
 - [*Dotc_Sundering Roar] Press !Sundering Roar!
-- [*Dotc_Convoke the Spirits] Press !Convoke the Spirits!
-- [*Dotc_Incarnation: Guardian of Ursoc] Press !Incarnation: Guardian of Ursoc!
-	- Take a look at the Incarn/Berserk Rotation section to see any rotational changes and when to use !Wild Guardians!
-- [*~Dotc_Incarnation: Guardian of Ursoc] Press !Berserk!
-	- Take a look at the Incarn/Berserk Rotation section to see any rotational changes and when to use !Wild Guardians!
-- [*Dotc_Red Moon] Cast !Red Moon!
-- Press !Mangle! if available
-- Press !Thrash! if available
-- Press !Swipe! if you have nothing else to press
+- Press !Mangle!
+- Press !Thrash!
+- Press !Swipe!
+
+########################################
 
 </Collapsible>
 
