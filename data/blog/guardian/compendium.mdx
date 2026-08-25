@@ -77,6 +77,7 @@ Those of you looking into Druid of the Claw specifically may come across these t
 
 <HeroTalentsHeader title="Druid of the Claw" id="dotc">
 
+<Checkbox isIcon id="Dotc_HotW" spellId={257318} name="Max damage pull with HotW" />
 <Checkbox isIcon id="Dotc_Heart of the Wild" spellId={319454} name="Heart of the Wild" defaultCheck />
 <Checkbox isIcon id="Dotc_Lunar Beam" spellId={204066} name="Lunar Beam" defaultCheck />
 <Checkbox isIcon id="Dotc_Red Moon" spellId={1252871} name="Red Moon" defaultCheck />
@@ -93,21 +94,29 @@ Those of you looking into Druid of the Claw specifically may come across these t
 <Collapsible title="Pre-Combat">
 
 - Make sure the duration of your Flask, Food and Rune buffs will last for the entire encounter.
-- Enter !Bear Form! a few seconds before you pull
-- [*Dotc_Lunar Beam] Press !Growl! and !Lunar Beam! to pull
-- [*~Dotc_Lunar Beam&&~Dotc_Red Moon] Press !Growl! and !Moonfire! to pull
-- [*Dotc_Heart of the Wild] Press !Rake! to enter !Cat Form!
+- [*~Dotc_HotW||Dotc_HotW&&~Dotc_Heart of the Wild] Enter !Bear Form! a few seconds before you pull
+- [*Dotc_HotW&&Dotc_Heart of the Wild] Enter !Cat Form! a second before you pull
+
+- [*Dotc_Lunar Beam&&~Dotc_HotW] Press !Growl! and !Lunar Beam! to pull
+- [*~Dotc_Lunar Beam&&~Dotc_Red Moon&&~Dotc_HotW] Press !Growl! and !Moonfire! to pull
+
+- [*Dotc_Heart of the Wild&&~Dotc_HotW] Press !Rake! to enter !Cat Form!
+- [*Dotc_Heart of the Wild&&Dotc_HotW] Press !Lunar Beam! on pull whilst in !Cat Form!
+
 - [*Dotc_Heart of the Wild] Use your combat potion (usually [Light's Potential](https://www.wowhead.com/item=241308/lights-potential)
 - [*Dotc_Heart of the Wild] Press !Heart of the Wild!
+
+- [*Dotc_Heart of the Wild&&Dotc_Convoke the Spirits] Press !Mangle! to re-enter !Bear Form!
 - [*Dotc_Heart of the Wild&&Dotc_Incarnation: Guardian of Ursoc] Immediately press !Incarnation: Guardian of Ursoc!
 	- !Incarnation: Guardian of Ursoc! isn't on the GCD so you can do instantly after !Heart of the Wild! goes on cooldown with no delay
-	- **Do not** recast your !Wild Guardian's! from this point until immediately before you are going to cast !441605|Ravage! after this opening sequence
-- [*Dotc_Heart of the Wild&&~Dotc_Incarnation: Guardian of Ursoc] Immediately press !Berserk!
+- [*Dotc_Heart of the Wild&&~Dotc_Incarnation: Guardian of Ursoc&&~Dotc_Convoke the Spirits] Immediately press !Berserk!
 	- !Berserk! isn't on the GCD so you can do instantly after !Heart of the Wild! goes on cooldown with no delay
-	- **Do not** recast your !Wild Guardian's! from this point until immediately before you are going to cast !441605|Ravage! after this opening sequence
-- [*~Dotc_Heart of the Wild] Press !Thrash!
-- [*~Dotc_Heart of the Wild&&Dotc_Sundering Roar] Press !Sundering Roar!
-- [*~Dotc_Heart of the Wild&&Dotc_Sundering Roar] Press !Thrash!
+- [*Dotc_Convoke the Spirits] Press and fully channel !Convoke the Spirits!
+- Press !Thrash!
+- [*Dotc_Sundering Roar] Press !Sundering Roar!
+- [*Dotc_Sundering Roar] Press !Thrash!
+- [*Dotc_Convoke the Spirits&&Dotc_Red Moon] If !Convoke the Spirits! did not cast a !Red Moon! then cast !Red Moon! yourself
+
 - [*~Dotc_Heart of the Wild&&Dotc_Incarnation: Guardian of Ursoc] Immediately press !Incarnation: Guardian of Ursoc! and use your combat potion (usually [Light's Potential](https://www.wowhead.com/item=241308/lights-potential)
 	- !Incarnation: Guardian of Ursoc! isn't on the GCD so you can do instantly after !Heart of the Wild! goes on cooldown with no delay
 	- **Do not** recast your !Wild Guardian's! from this point until immediately before you are going to cast !441605|Ravage! after this opening sequence
@@ -115,7 +124,7 @@ Those of you looking into Druid of the Claw specifically may come across these t
 	- !Berserk! isn't on the GCD so you can do instantly after !Heart of the Wild! goes on cooldown with no delay
 	- **Do not** recast your !Wild Guardian's! from this point until immediately before you are going to cast !441605|Ravage! after this opening sequence
 - Press !Thrash!
-- [*Dotc_Heart of the Wild&&Dotc_Incarnation: Guardian of Ursoc&&Dotc_Red Moon] Presss !Red Moon!
+- [*Dotc_Heart of the Wild&&Dotc_Incarnation: Guardian of Ursoc&&Dotc_Red Moon] Presss !Red Moon! if your !Convoke the Spirits! didn't put one on your target.
 - Proceed with normal rotation
 
 ################################################
